@@ -1,5 +1,3 @@
-Groep 7 - Smartfestival
-
 # Instructies voor de smartfestival applicataion
 
 De applicatie builden en deployen werd zo eenvoudig mogelijk gemaakt. Het meeste wordt gedaan door scripts maar afhankelijk van de aanwezige versies op de cluster kan dit soms een manuele aanpak nodig zijn.
@@ -189,5 +187,6 @@ Het is voor medewerkers ook steeds mogelijk om een melding bij de security te ma
 - 3: Vul de nodige informatie in, de ID is te vinden bij bloke 4.
 - 4: De ID van de melding
 - 5: Verstuur de reply
-#   s m a r t f e s t i v a l  
+#   s m a r t f e s t i v a l 
+ 
  
