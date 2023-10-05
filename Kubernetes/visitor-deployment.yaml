@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: visitor
+  name: visitor
+spec:
+  selector:
+    matchLabels:
+      io.kompose.service: visitor
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: visitor
+    spec:
+      containers:
+      - image: lemigom/visitor
+        name: visitor
+        ports:
+        - containerPort: 2226
+        resources: {}
+        volumeMounts:
+      restartPolicy: Always

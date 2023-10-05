@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: product
+  name: product
+spec:
+  selector:
+    matchLabels:
+      io.kompose.service: product
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: product
+    spec:
+      containers:
+      - image: lemigom/product
+        name: product
+        ports:
+        - containerPort: 2227
+        resources: {}
+        volumeMounts:
+      restartPolicy: Always

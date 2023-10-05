@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: notification
+  name: notification
+spec:
+  selector:
+    matchLabels:
+      io.kompose.service: notification
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: notification
+    spec:
+      containers:
+      - image: lemigom/notification
+        name: notification
+        ports:
+        - containerPort: 2223
+        resources: {}
+        volumeMounts:
+      restartPolicy: Always
