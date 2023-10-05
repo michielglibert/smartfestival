@@ -187,5 +187,3 @@ Het is voor medewerkers ook steeds mogelijk om een melding bij de security te ma
 - 3: Vul de nodige informatie in, de ID is te vinden bij bloke 4.
 - 4: De ID van de melding
 - 5: Verstuur de reply
- 
- 
