@@ -16,7 +16,7 @@ De applicatie bezit meerdere mappen en bestanden. Een korte uitleg bij de bedoel
 
 - **Service mappen**: Dit zijn mappen waar de effectieve imlementatie van de service zich in bevindt.
 - **ApiGateway**: Dit is de apigateway van de applicatie
-- **Frontend**: Dit bevat een react frontend. In de build submap van deze map vindt je de effectie HTML bestanden die gegenereerd zijn door `yarn build production`. Zou deze worden gebruikt voor iets, vergeet zeker niet een ``npm install`of`yarn install` uit te voeren.
+- **Frontend**: Dit bevat een react frontend. In de build submap van deze map vindt je de effectie HTML bestanden die gegenereerd zijn door `yarn build production`. Zou deze worden gebruikt voor iets, vergeet zeker niet een `npm install`of`yarn install` uit te voeren.
 - **Kubernetes**: Deze map bevat kubernetes deployment bestanden, later hierover meer (Deployen op kubernetes).
 - **build-all.bat/buildall.sh**: Deze 2 bestanden doen hetzelfde maar zijn een implementatie voor respectievelijk Windows en Linux/Mac. Deze scripts builden gewoonweg alle spring projecten.
 - **clean_files.sh**: Kuist alle build bestanden op
